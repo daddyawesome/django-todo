@@ -26,7 +26,7 @@ SECRET_KEY = '2tj2o=el_pn%%5frpg_br9h*gl8*jyg(ml1sje)4h7+j%gl(8n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['djtodo4me.herokuapp.com']
 
 
 # Application definition
@@ -121,3 +121,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, ‘staticfiles’)
+db_from_env = dj_database_url.config()
+DATABASES[‘default’].update(db_from_env)

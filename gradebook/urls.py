@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     # Home View
-    path('^$', views.HomePageView.as_view(), name='home'),
+    path('', views.HomePageView.as_view(), name='home'),
 
     # # Authentication Views
     # url(r'^login/$', views.auth_v.LoginPageView.as_view(), name='login'),

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     'tasks',
     'gradebook',
+    'polls',
 ]
 
 MIDDLEWARE = [

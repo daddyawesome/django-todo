@@ -1,7 +1,12 @@
 body {
-    background: blue;
+    background: #638CB8 url("images/background.gif") no-repeat;
 }
 
 li a {
-    color: green;
+    color: orange;
+}
+
+h1 {
+    font-family:Florence, cursive;
+    color: white;
 }
